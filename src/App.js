@@ -4,8 +4,9 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-// import FacilityList from "./pages/FacilityList";
-// import FacilityDetail from "./pages/FacilityDetail";
+import Caregiver from "./pages/Caregiver";
+import NursingHome from "./pages/NursingHome";
+import Slivertown from "./pages/Slivertown";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/facilities" element={<FacilityList />} />
-        <Route path="/facilities/:id" element={<FacilityDetail />} /> */}
+        <Route path="/caregiver" element={<Caregiver />} />
+        <Route path="/nursinghome" element={<NursingHome />} />
+        <Route path="/slivertown" element={<Slivertown />} />
       </Routes>
       <Footer />
     </div>
